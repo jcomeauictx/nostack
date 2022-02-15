@@ -1,0 +1,18 @@
+{
+  "name": "Nostack: the substack eliminator",
+  "version": "0.0.0.1",
+  "description": "Replaces all substack links with cdc.gov",
+  "background": {
+    "persistent": false,
+    "scripts": ["nostack.js"]
+  },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "Nostack"
+   },
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": ["https://*.facebook.com/*"],
+  "manifest_version": 2
+}
