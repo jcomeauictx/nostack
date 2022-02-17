@@ -1,11 +1,11 @@
 %!ps-nonconforming
 /inch {72 mul} bind def
-/circle {0 0 1 inch 0 360 arc closepath stroke} def
+/circle {0 0 3 inch 0 360 arc closepath stroke} def
 /circleslash {
  gsave
  1 0 0 setrgbcolor
- 0.1 inch setlinewidth 
+ 0.25 inch setlinewidth 
  circle
  grestore
 } bind def
-1 inch 1 inch moveto currentpoint translate circleslash showpage
+4.25 inch 5.5 inch moveto currentpoint translate circleslash showpage
