@@ -1,7 +1,8 @@
 %!ps-nonconforming
 /inch {72 mul} bind def
-/circle {0 0 3 inch 0 360 arc closepath stroke} bind def
-/slash {-3 inch -3 inch moveto 3 inch 3 inch lineto stroke} bind def
+/radius {3 inch} bind def
+/circle {0 0 radius 0 360 arc closepath stroke} bind def
+/slash {radius neg dup moveto radius dup lineto stroke} bind def
 /circleslash {
  gsave
  1 0 0 setrgbcolor
