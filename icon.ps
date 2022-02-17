@@ -11,5 +11,16 @@
  circle slash
  grestore
 } bind def
+/hexagon {
+ gsave
+ 0 0 moveto
+ 0 setgray
+ 1 setlinewidth
+ 6 { % repeat count
+ 0 0.5 inch rlineto
+ 60 rotate} repeat
+ closepath stroke fill
+ grestore
+} bind def
 4.25 inch 5.5 inch translate
-circleslash showpage
+hexagon circleslash showpage
