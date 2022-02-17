@@ -1,8 +1,9 @@
 %!ps-nonconforming
 /inch {72 mul} bind def
+/pi 3.14159265 def
 /radius {3 inch} bind def
 /circle {0 0 radius 0 360 arc closepath stroke} bind def
-/slash {radius neg dup moveto radius dup lineto stroke} bind def
+/slash {radius 45 sin mul dup dup neg dup moveto lineto stroke} bind def
 /circleslash {
  gsave
  1 0 0 setrgbcolor
