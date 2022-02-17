@@ -4,8 +4,10 @@
 /circleslash {
  gsave
  1 0 0 setrgbcolor
- 0.25 inch setlinewidth 
+ 0.5 inch setlinewidth 
  circle
  grestore
 } bind def
-4.25 inch 5.5 inch moveto currentpoint translate circleslash showpage
+4.25 inch 5.5 inch moveto
+currentpoint translate newpath
+circleslash showpage
