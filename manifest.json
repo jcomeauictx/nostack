@@ -13,6 +13,6 @@
   "icons": {
     "128": "icon.png"
   },
-  "permissions": ["https://*.facebook.com/*"],
+  "permissions": ["https://*.substack.com/*"],
   "manifest_version": 2
 }
