@@ -1,0 +1,2 @@
+view: icon.ps
+	gs $<
