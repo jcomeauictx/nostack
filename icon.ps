@@ -3,6 +3,7 @@
 /pi 3.14159265 def
 /radius {3 inch} bind def
 /side radius 2 div def  % length of box side
+/squash 2 3 div def  % vertical scale squash factor
 /circle {0 0 radius 0 360 arc closepath stroke} bind def
 /slash {radius 45 sin mul dup dup neg dup moveto lineto stroke} bind def
 /circleslash {
@@ -12,9 +13,9 @@
  circle slash
  grestore
 } bind def
-/hexagon {
+/box {
  gsave
- 1 .666667 scale
+ 1 squash scale
  side -30 cos mul side -30 sin mul moveto
  % 0 0 moveto
  0 setgray
@@ -26,4 +27,6 @@
  grestore
 } bind def
 4.25 inch 5.5 inch translate
-hexagon circleslash showpage
+gsave 0 side squash mul translate box grestore
+gsave 0 side squash mul neg translate box grestore
+circleslash showpage
