@@ -5,6 +5,8 @@ government narratives on Covid-19 and any other health concerns.
 
 To install the extension:
    1. `git clone` this repository
-   2. Open a new tab and visit <chrome://extensions>
-   3. At the top right, slide the Developer Mode button to the right if it isn't already there.
-   4. At the left, click [Load unpacked] and navigate to the directory of the cloned repository.
+   2. `cd nostack` and `make icon.png`
+   3. Open a new tab and visit <chrome://extensions>
+   4. At the top right, slide the Developer Mode button to the right if it isn't already there.
+   5. At the left, click [Load unpacked] and navigate to the directory of the cloned repository.
+   6. Click [Open] at the bottom right of the pop-up window. You may need to maximize the window if it's not visible.
