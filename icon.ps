@@ -7,17 +7,18 @@
 /circleslash {
  gsave
  1 0 0 setrgbcolor
- 0.5 inch setlinewidth 
+ .5 inch setlinewidth 
  circle slash
  grestore
 } bind def
 /hexagon {
  gsave
+ 1 .666667 scale
  0 0 moveto
  0 setgray
  1 setlinewidth
  6 { % repeat count
- 0 0.5 inch rlineto
+ 0 1.5 inch rlineto
  60 rotate} repeat
  closepath fill stroke
  grestore
