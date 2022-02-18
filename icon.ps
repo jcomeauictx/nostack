@@ -15,7 +15,7 @@
 } bind def
 /box {
  gsave
- 1 squash scale
+ 1 squash scale gsave
  side -30 cos mul side -30 sin mul moveto
  % 0 0 moveto
  0 setgray
@@ -24,6 +24,11 @@
  0 1.5 inch rlineto
  60 rotate} repeat
  closepath fill stroke
+ grestore
+ 0 0 moveto
+ .125 inch setlinewidth
+ 1 setgray  % paint edges white
+ 3 {gsave 0 side neg rlineto stroke grestore 120 rotate} repeat
  grestore
 } bind def
 4.25 inch 5.5 inch translate
