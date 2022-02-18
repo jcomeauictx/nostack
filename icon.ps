@@ -1,7 +1,8 @@
-%!ps-nonconforming
+%!PS-nonconforming
 /inch {72 mul} bind def
 /pi 3.14159265 def
 /radius {3 inch} bind def
+/side radius 2 div def  % length of box side
 /circle {0 0 radius 0 360 arc closepath stroke} bind def
 /slash {radius 45 sin mul dup dup neg dup moveto lineto stroke} bind def
 /circleslash {
@@ -14,6 +15,7 @@
 /hexagon {
  gsave
  1 .666667 scale
+ % side 30 sin mul side 30 cos mul moveto
  0 0 moveto
  0 setgray
  1 setlinewidth
